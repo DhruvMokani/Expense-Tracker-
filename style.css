@@ -1,0 +1,157 @@
+body 
+{
+    font-family : Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.container 
+{
+    width : 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) ;
+    
+}
+
+h1 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addExpense
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white ;
+    border-radius: 5px ;
+    border: none ;
+    cursor: pointer;
+    transition: 0.02s;
+}
+
+#addExpense:hover
+{
+    background-color: #555;
+}
+
+li
+{
+    list-style: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button 
+{
+    padding : 6px 10px;
+    border-radius: 5px ;
+    border : none ;
+    cursor : pointer;
+}
+
+.deleteButton
+{
+    background-color: #ff4d4d;
+    color: white;
+    transition: 0.02s;
+
+}
+
+.editButton
+{
+    background-color: #4d79ff;
+    color: white;
+    transition: 0.02s;
+
+}
+
+.deleteButton:hover
+{
+    background-color: #cc0000;
+}
+
+.editButton:hover
+{
+    background-color: #335ccc;
+}
+
+.actions 
+{
+    display: flex;
+    margin-left:auto;
+    gap: 8px;
+}
+
+#total
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#totalBox
+{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.08) ;
+}
+
+#expenseList
+{
+    padding: 0;
+}
+
+input:focus 
+{
+    outline: none;
+    border-color: #555;
+}
+
+@media (max-width: 500px)
+{
+    .container
+    {
+        width : 90%;
+    }
+}
+
+#clearExpenses
+{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #777;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#clearExpenses:hover
+{
+    background-color: #555;
+}
